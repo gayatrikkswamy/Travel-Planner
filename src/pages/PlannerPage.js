@@ -64,7 +64,7 @@ const PlannerPage = () => {
   const [loading, setLoading] = useState(false);
 
   // Fetch saved itineraries from localStorage on component mount
-  const [savedItineraries, setSavedItineraries] = useState([]);
+  const [, setSavedItineraries] = useState([]);
 
   useEffect(() => {
     const user = JSON.parse(localStorage.getItem('user'));
